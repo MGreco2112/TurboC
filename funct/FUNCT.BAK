@@ -10,8 +10,6 @@ int main() { /*declare main function*/
  int a = 5; /*initilze int var a with val 5*/
  int b = 10; /*initlze int var with val 10*/
  int c; /*declare c var*/
- float f_a;
- float f_b;
  float d; /*declare float var*/
 
  clrscr(); /*clear screen*/
@@ -24,10 +22,7 @@ int main() { /*declare main function*/
 
  printf("Multiplied values %d and %d to prod: %d\n", a, b, c);
 
- f_a = a * 1.5f;
- f_b = b * 1.5f;
-
- d = divid(f_a, f_b);
+ d = divid(a, b);
 
  printf("Divided values %d and %d to prod: %f\n", a, b, d);
 
