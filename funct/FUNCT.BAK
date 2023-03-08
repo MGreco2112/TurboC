@@ -1,0 +1,19 @@
+/*function demo within c*/
+
+int main() { /*declare main function*/
+ int a = 5;
+ int b = 10;
+ int c;
+
+ c = add(a, b);
+
+ printf("Added values = %d", c);
+
+
+ return 0;
+}
+
+int add(int first, int second) {
+
+ return first + second;
+}
