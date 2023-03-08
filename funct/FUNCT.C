@@ -5,8 +5,12 @@ float divid(float first, float second) { /*define funct outputs float takes floa
   return output; /*return output float*/
 }
 
-int mult(int first, int second) {
- return first * second;
+int mult(int first, int second) { /*define mult function that takes two int params*/
+ return first * second; /*return first param multiplied by second param*/
+}
+
+int add(int first, int second) { /*define add function that takes two int params*/
+ return first + second; /*returns the sum of the two params*/
 }
 
 int main() { /*declare main function*/
@@ -32,9 +36,4 @@ int main() { /*declare main function*/
  printf("Divided values %d and %d to prod: %f\n", a, b, d);
 
  return 0; /*return a 0 to signal that main function has terminated correctly*/
-}
-
-int add(int first, int second) { /*define function add taking two int params*/
-
- return first + second; /*return added params*/
 }
