@@ -4,11 +4,21 @@ int main() { /*declare main function*/
  int a = 5; /*initilze int var a with val 5*/
  int b = 10; /*initlze int var with val 10*/
  int c; /*declare c var*/
+ float d; /*declare float var*/
+
+ clrscr(); /*clear screen*/
 
  c = add(a, b); /*assign c return val of add function with a and b as args*/
 
- printf("Added values = %d", c); /*print formatted output with c as dec value*/
+ printf("Added values %d and %d to prod: %d\n", a, b, c); /*print formatted output with c as dec value*/
 
+ c = mult(a, b);
+
+ printf("Multiplied values %d and %d to prod: %d\n", a, b, c);
+
+ d = div(a, b);
+
+ printf("Divided values %d and %d to prod: %f\n", a, b, d);
 
  return 0;
 }
@@ -16,4 +26,12 @@ int main() { /*declare main function*/
 int add(int first, int second) { /*define function add taking two int params*/
 
  return first + second; /*return added params*/
+}
+
+int mult(int first, int second) {
+ return first * second;
+}
+
+int div(int first, int second) {
+ return first / second;
 }

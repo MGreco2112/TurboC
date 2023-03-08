@@ -1,19 +1,37 @@
 /*function demo within c*/
 
 int main() { /*declare main function*/
- int a = 5;
- int b = 10;
- int c;
+ int a = 5; /*initilze int var a with val 5*/
+ int b = 10; /*initlze int var with val 10*/
+ int c; /*declare c var*/
+ float d; /*declare float var*/
 
- c = add(a, b);
+ clrscr(); /*clear screen*/
 
- printf("Added values = %d", c);
+ c = add(a, b); /*assign c return val of add function with a and b as args*/
 
+ printf("Added values %d and %d to prod: %d\n", a, b, c); /*print formatted output with c as dec value*/
+
+ c = mult(a, b);
+
+ printf("Multiplied values %d and %d to prod: %d\n", a, b, c);
+
+ d = div(a, b);
+
+ printf("Divided values %d and %d to prod: %f\n", a, b, d);
 
  return 0;
 }
 
-int add(int first, int second) {
+int add(int first, int second) { /*define function add taking two int params*/
 
- return first + second;
+ return first + second; /*return added params*/
+}
+
+int mult(int first, int second) {
+ return first * second;
+}
+
+float div(int first, int second) {
+ return first / second;
 }
