@@ -1,9 +1,8 @@
 /*function demo within c*/
-#include <float.h>
 
-float divid(float first, float second) {
-  float output = first / second;
-  return output;
+float divid(float first, float second) { /*define funct outputs float takes floats*/
+  float output = first / second; /*create local float var assign first param div by second*/
+  return output; /*return output float*/
 }
 
 int main() { /*declare main function*/
@@ -18,15 +17,17 @@ int main() { /*declare main function*/
 
  printf("Added values %d and %d to prod: %d\n", a, b, c); /*print formatted output with c as dec value*/
 
- c = mult(a, b);
+ c = mult(a, b); /*assign output from mult of a and b to int var c*/
 
+ /*print output a, b, and multiplied result of a and b stored in c*/
  printf("Multiplied values %d and %d to prod: %d\n", a, b, c);
 
- d = divid(a, b);
+ d = divid(a, b); /*assign output of a divided by b to float var d*/
 
+ /*print values a and b and quotent stored in var d*/
  printf("Divided values %d and %d to prod: %f\n", a, b, d);
 
- return 0;
+ return 0; /*return a 0 to signal that main function has terminated correctly*/
 }
 
 int add(int first, int second) { /*define function add taking two int params*/

@@ -5,6 +5,10 @@ float divid(float first, float second) { /*define funct outputs float takes floa
   return output; /*return output float*/
 }
 
+int mult(int first, int second) {
+ return first * second;
+}
+
 int main() { /*declare main function*/
  int a = 5; /*initilze int var a with val 5*/
  int b = 10; /*initlze int var with val 10*/
@@ -33,8 +37,4 @@ int main() { /*declare main function*/
 int add(int first, int second) { /*define function add taking two int params*/
 
  return first + second; /*return added params*/
-}
-
-int mult(int first, int second) {
- return first * second;
 }
