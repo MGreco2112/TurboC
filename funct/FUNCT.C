@@ -1,4 +1,10 @@
 /*function demo within c*/
+#include <float.h>
+
+float divid(float first, float second) {
+  float output = first / second;
+  return output;
+}
 
 int main() { /*declare main function*/
  int a = 5; /*initilze int var a with val 5*/
@@ -16,7 +22,7 @@ int main() { /*declare main function*/
 
  printf("Multiplied values %d and %d to prod: %d\n", a, b, c);
 
- d = div(a, b);
+ d = divid(a, b);
 
  printf("Divided values %d and %d to prod: %f\n", a, b, d);
 
@@ -30,8 +36,4 @@ int add(int first, int second) { /*define function add taking two int params*/
 
 int mult(int first, int second) {
  return first * second;
-}
-
-int div(int first, int second) {
- return first / second;
 }
