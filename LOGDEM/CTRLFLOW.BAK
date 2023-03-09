@@ -19,11 +19,12 @@ int main() {
 
  printf("You entered %s as your name.%s", name, end); /*print stored value in name*/
 
+ /*print basic yes or no prompt*/
  printf("Make a selection, enter 'y' or 'n':%s", end);
- input = getch();
+ input = getch(); /*capture user input as char using getch function*/
 
- switch (input) {
-  case 121:
+ switch (input) { /*open switch statement on input*/
+  case 121: /*check for int ascii values of y or n key, assign bool values accordingly*/
    choice = true;
    break;
   case 110:
@@ -33,7 +34,7 @@ int main() {
    printf("Invalid selection, learn to read directions.%s", end);
  }
 
- if (choice) {
+ if (choice) { /*check bool val of choice, print statements accordingly*/
   printf("%s chose to enter Yes.%s", name, end);
  } else {
   printf("%s chose to enter No.%s", name, end);
