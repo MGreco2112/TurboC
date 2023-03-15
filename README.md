@@ -17,3 +17,7 @@ The dream will be to create fully functional, engaging, and entertaining applica
 
 3/7/2023
 
+
+Update: 3/15/2023
+
+After learning a little more about the C language, I have determined that my more immediate goals would be better suited in the C++ language. [My C++ Repository](https://github.com/MGreco2112/TurboCPlusPlus) will be where my main attention will be focused for now. I should return to C once my goals with C++ are more firmly met.
